@@ -1,0 +1,56 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0; }
+
+.container-fluid {
+  height: 100%;
+  position: relative;
+  padding-left: 0px;
+  margin-right: 0px;
+  margin-left: 0px; }
+
+.row {
+  height: 100%; }
+
+.img {
+  background: url("../img/photo.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  -webkit-transition: 1s;
+  transition: 1s; }
+
+.home-page {
+  height: 100%; }
+
+.content__bg_img--0 {
+  background-image: url("../img/photo.jpg");
+  height: 100%; }
+
+.content__bg_img--1 {
+  background-image: url("../img/photo1.jpg");
+  height: 100%; }
+
+.content__bg_img--2 {
+  background-image: url("../img/photo2.jpg");
+  height: 100%; }
+
+.content__bg_img--3 {
+  background-image: url("../img/photo3.jpg");
+  height: 100%; }
+
+.content__bg_img--4 {
+  background-image: url("../img/photo4.jpg");
+  height: 100%; }
+
+.content__bg_img--5 {
+  background-image: url("../img/photo5.jpg"); }
+
+.content__bg_img--6 {
+  background-image: url("../img/photo6.jpg"); }
+
+.img__bg_img--7 {
+  background-image: url("../img/photo7.jpg"); }

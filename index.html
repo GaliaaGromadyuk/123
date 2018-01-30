@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Start</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" href="favicon.png"/>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="css/slick.css"/>
+		<link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+		<script src="https://use.fontawesome.com/1b185c8149.js"></script>
+		<link rel="stylesheet" href="css/main.css"/>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="row home-page">
+				<div class="col-2">
+					  	<ul class="nav flex-column">
+					  	  	<li class="nav-item active">
+								<a href="#" class="nav-link">Home</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link">Wedding</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link">Love story</a>
+							</li>
+							<li class="nav-item ">
+								<a href="#" class="nav-link">Family</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link">Portrait</a>
+							</li>
+							<li class="nav-item ">
+								<a href="#" class="nav-link">About</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link">Contact</a>
+							</li>
+					  	</ul>
+				</div>
+				<div class="col-5">
+
+				</div>
+				<div class="col-5 ">
+					<div class="img">
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="js/slick.min.js"></script>
+		<script src="js/main.js"></script>
+		<script>
+			var imgHead = [
+						'img/photo.jpg',
+						'img/photo1.jpg',
+						'img/photo2.jpg',
+						'img/photo3.jpg',
+						'img/photo4.jpg',
+						'img/photo5.jpg',
+						'img/photo6.jpg',
+						'img/photo7.jpg'
+					], i=1;
+				function csaHead(){
+
+					if(i > (imgHead.length-1)){
+						$('.img').animate({'opacity':'0'},50,function(){
+							i=1;
+							$('.img').css({'background':'url('+imgHead[0]+') 100% 100% no-repeat fixed', 'background-size': 'cover'});
+						});
+						$('.img').animate({'opacity':'1'},500);
+					}else{
+						$('.img').animate({'opacity':'0'},50,function(){
+							$('.img').css({'background':'url('+imgHead[i]+') 100% 100% no-repeat fixed', 'background-size': 'cover'});
+							i++;
+						});
+						$('.img').animate({'opacity':'1'},50);
+					}
+
+				}
+				var intervalCsaHead = setInterval(csaHead,8000);
+		</script>
+	</body>
+</html>
